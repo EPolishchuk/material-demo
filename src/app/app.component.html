@@ -1,15 +1,17 @@
 <div>
-  <span matBadge="555">Notifications</span>
+  <mat-progress-spinner value="15"></mat-progress-spinner>
+  <mat-progress-spinner value="35"></mat-progress-spinner>
+  <mat-progress-spinner value="75"></mat-progress-spinner>
 </div>
+
 <div>
-  <span matBadge="555" matBadgePosition="below before" matBadgeSize="small">Notifications</span>
+  <mat-progress-bar></mat-progress-bar>
+  <mat-progress-bar mode="indeterminate"></mat-progress-bar>
+  <mat-progress-bar mode="buffer"></mat-progress-bar>
 </div>
+
 <div>
-  <span matBadge="555" matBadgePosition="below after" matBadgeColor="accent">Notifications</span>
-</div>
-<div>
-  <span matBadge="555" matBadgePosition="above before" matBadgeSize="large" matBadgeColor="warn">Notifications</span>
-</div>
-<div>
-  <span [matBadge]="notifications" matBadgeOverlap="false" [matBadgeHidden]="notifications === 0">Notifications</span>
+  <button mat-button (click)="loadData()">Load Data</button>
+  <mat-spinner *ngIf="showSpinner" color="warn"></mat-spinner>
+  <mat-progress-bar *ngIf="showSpinner" mode="indeterminate" color="accent"></mat-progress-bar>
 </div>
