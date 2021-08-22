@@ -1,5 +1,15 @@
 <div>
-  <mat-icon color="primary">fingerprint</mat-icon> 
-  <mat-icon color="accent">home</mat-icon> 
-  <mat-icon color="warn">print</mat-icon> 
+  <span matBadge="555">Notifications</span>
+</div>
+<div>
+  <span matBadge="555" matBadgePosition="below before" matBadgeSize="small">Notifications</span>
+</div>
+<div>
+  <span matBadge="555" matBadgePosition="below after" matBadgeColor="accent">Notifications</span>
+</div>
+<div>
+  <span matBadge="555" matBadgePosition="above before" matBadgeSize="large" matBadgeColor="warn">Notifications</span>
+</div>
+<div>
+  <span [matBadge]="notifications" matBadgeOverlap="false" [matBadgeHidden]="notifications === 0">Notifications</span>
 </div>
