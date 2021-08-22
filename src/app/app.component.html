@@ -1,17 +1,10 @@
 <div>
-  <mat-progress-spinner value="15"></mat-progress-spinner>
-  <mat-progress-spinner value="35"></mat-progress-spinner>
-  <mat-progress-spinner value="75"></mat-progress-spinner>
-</div>
-
-<div>
-  <mat-progress-bar></mat-progress-bar>
-  <mat-progress-bar mode="indeterminate"></mat-progress-bar>
-  <mat-progress-bar mode="buffer"></mat-progress-bar>
-</div>
-
-<div>
-  <button mat-button (click)="loadData()">Load Data</button>
-  <mat-spinner *ngIf="showSpinner" color="warn"></mat-spinner>
-  <mat-progress-bar *ngIf="showSpinner" mode="indeterminate" color="accent"></mat-progress-bar>
+  <mat-toolbar color="primary" class="navbar">
+    <div>Toolbar</div> 
+    <div>
+      <span>Home</span>
+      <span>About</span>
+      <span>Services</span>
+    </div> 
+  </mat-toolbar>
 </div>
